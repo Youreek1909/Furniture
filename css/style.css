@@ -1,0 +1,109 @@
+/*
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #E3E3E3; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #F7F7F7; }
+
+.main {
+  height: 100vh;
+  position: relative; }
+  .main__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1; }
+  .main__shape {
+    clip-path: polygon(0 75%, 100% 55%, 100% 100%, 0% 100%);
+    background: #F09D0A;
+    background: linear-gradient(180deg, #f09d0a 0%, rgba(240, 157, 10, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2; }
+  .main__shadow {
+    position: absolute;
+    right: 16%;
+    top: 24%;
+    width: 37rem;
+    height: 40rem;
+    clip-path: polygon(0 0, 100% 15%, 100% 84%, 0% 100%);
+    border: 3px solid grey;
+    z-index: 4; }
+  .main__wrapper {
+    position: absolute;
+    right: 14%;
+    top: 20%;
+    width: 37rem;
+    height: 40rem;
+    clip-path: polygon(0 0, 100% 15%, 100% 84%, 0% 100%);
+    z-index: 5; }
+    .main__wrapper--image {
+      width: 100%;
+      height: 100%; }
+  .main__header {
+    display: flex;
+    justify-content: space-around; }
+    .main__header--logo {
+      width: 100%; }
+      .main__header--logo-wrapper {
+        width: 23rem;
+        margin-top: .5rem; }
+    .main__header--nav li {
+      display: inline-block;
+      padding: 2rem; }
+      .main__header--nav li a {
+        text-decoration: none;
+        color: #F7F7F7;
+        text-transform: uppercase;
+        font-size: 1.2rem; }
+    .main__header--icon i {
+      font-size: 2rem;
+      padding: 2rem 0 2rem 2rem; }
+  .main__container {
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); }
+  .main__entry {
+    width: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    z-index: 5;
+    text-align: center; }
+    .main__entry h1 {
+      font-size: 3.5rem;
+      letter-spacing: .7rem;
+      text-align: left;
+      margin-bottom: 2rem;
+      line-height: 1;
+      text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+      .main__entry h1 span {
+        font-family: Merienda, sans-serif; }
+    .main__entry--btn {
+      background-color: transparent;
+      padding: .9rem 4rem;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: #F7F7F7;
+      border: 2px solid #F7F7F7;
+      border-radius: 3px;
+      box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2); }
