@@ -1,0 +1,112 @@
+.footer {
+  background-color: #A8A6A3;
+  padding: 5rem 0;
+
+  &__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+    &--logo {
+      width: 7rem;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    &--nav {
+
+      & a {
+        color: $color-text;
+        text-decoration: none;
+        font-size: 1.1rem;
+
+        & p {
+          margin-bottom: .7rem;
+        }
+      }
+    }
+
+    &--social {
+
+      & ul {
+
+        & a {
+          color: $color-text;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          & li {
+            list-style-type: none;
+
+            & i {
+              font-size: 1.5rem;
+              margin-right: 1.2rem;
+              width: 1.5rem;
+            }
+
+            & p {
+              display: inline-block;
+              margin-bottom: .7rem;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+
+    &--email {
+
+      & label {
+        font-size: 1.1rem;
+        display: block;
+        margin-bottom: 1.5rem;
+      }
+
+      & input {
+        background-color: #A8A6A3;
+        width: 18rem;
+        height: 3rem;
+        border: 1px solid $color-text;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+        &::placeholder {
+          padding-left: 1rem;
+          color: $color-text;
+        }
+
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      & button {
+        width: 4rem;
+        height: 3rem;
+        background-color: $color-text;
+        color: #A8A6A3;
+        font-size: .9rem;
+        border: 1px solid $color-text;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        margin-left: -.4rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &--contact {
+      & p {
+        font-size: 1.1rem;
+        margin-bottom: .7rem;
+      }
+    }
+  }
+}
