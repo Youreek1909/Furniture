@@ -1,7 +1,146 @@
 .home {
   position: relative;
 
-  & h1 {
-    margin-bottom: 50rem;
+  &--bg {
+    background: linear-gradient(90deg, rgba(191,189,184,1) 0%, rgba(220,208,188,1) 100%);
+  }
+
+  .section1 {
+    text-align: center;
+    padding: 8rem 0 10rem 0;
+
+    &__wrapper {
+      padding: 8rem 0 8rem 1rem;
+    }
+
+    &__heading {
+     text-transform: uppercase;
+     font-size: 3rem;
+     text-shadow: $text-shadow;
+     margin-bottom: 4rem;
+    }
+
+    &__text {
+      font-family: $font-second;
+      font-size: 1.5rem;
+      text-shadow: $text-shadow;
+    }
+
+    ///////
+    // Slider in _sliders.scss
+    ///////
+
+    &__outline {
+      width: 59rem;
+      height: 33rem;
+      border: 2px solid $color-primary;
+      position: absolute;
+      top: 4rem;
+      left: 4.5rem;
+    }
+  }
+
+  .section2 {
+    margin-bottom: 10rem;
+
+    &__row {
+      margin-bottom: 4rem;
+    }
+
+    &__heading {
+      text-transform: uppercase;
+      text-shadow: $text-shadow;
+      margin-bottom: 2rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 1.5rem;
+      box-shadow: 3px 3px 5px 0px rgba($color-primary, 0.4);
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-shadow: $text-shadow;
+    }
+  }
+
+  .section3 {
+    margin-bottom: 10rem;
+    padding: 0 4rem;
+
+    &__heading {
+      text-transform: uppercase;
+      text-shadow: $text-shadow;
+      margin-bottom: 2rem;
+    }
+
+  }
+
+  .section4 {
+    padding-bottom: 35rem;
+    position: relative;
+
+    &__row {
+
+    }
+
+    &__heading {
+      text-transform: uppercase;
+      text-shadow: $text-shadow;
+      margin-bottom: 1.5rem;
+    }
+
+    &__btn {
+      width: 15rem;
+      text-transform: uppercase;
+      font-size: .8rem;
+      color: $color-primary;
+      background-color: #B9A8AA;
+      border: none;
+      border-radius: 2px;
+      padding: 1rem 0;
+      margin-bottom: 3rem;
+
+      & i {
+        margin-left: 1rem;
+      }
+    }
+
+    &__outline {
+      margin: 0 10rem;
+      height: 20rem;
+      border: 1px solid $color-text;
+      position: absolute;
+      width: 91rem;
+    }
+
+    &__rel {
+      position: relative;
+    }
+
+    &__img {
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 3px 3px 5px 0px rgba($color-primary, 0.4);
+      position: absolute;
+    }
+
+    .img-1,
+    .img-3 {
+      top: -12rem;
+      left: 0;
+    }
+
+    .img-2 {
+      top: 5rem;
+      left: 0;
+    }
   }
 }

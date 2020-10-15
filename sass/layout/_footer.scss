@@ -1,5 +1,5 @@
 .footer {
-  background-color: #A8A6A3;
+  background-color: $color-grey;
   padding: 5rem 0;
 
   &__wrapper {
@@ -67,7 +67,7 @@
       }
 
       & input {
-        background-color: #A8A6A3;
+        background-color: $color-grey;
         width: 18rem;
         height: 3rem;
         border: 1px solid $color-text;
@@ -89,7 +89,7 @@
         width: 4rem;
         height: 3rem;
         background-color: $color-text;
-        color: #A8A6A3;
+        color: $color-grey;
         font-size: .9rem;
         border: 1px solid $color-text;
         border-top-right-radius: 3px;
