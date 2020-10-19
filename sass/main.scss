@@ -6,9 +6,11 @@
 @import "base/utilities";
 
 @import "components/sliders";
+@import "components/pagination";
 
 @import "layout/header";
 @import "layout/footer";
 
-@import "pages/mainPage";
+@import "pages/livingRoomPage";
 @import "pages/homePage";
+@import "pages/sofa";

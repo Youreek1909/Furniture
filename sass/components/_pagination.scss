@@ -1,0 +1,22 @@
+.pagination {
+  padding: 3rem 5rem;
+
+  &__item {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  &__link {
+    color: $color-primary;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+
+  .link-active {
+    font-weight: bold;
+  }
+}
