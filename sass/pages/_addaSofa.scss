@@ -1,0 +1,243 @@
+.addaSofa {
+
+
+  .sofaPreview {
+    padding: 6rem 10rem;
+    margin-bottom: 6rem;
+
+    &__heading {
+      margin-left: 16rem;
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      color: $color-primary;
+      margin-bottom: 3.5rem;
+    }
+
+    ///// Slider in *sliders* layout
+
+    &__description {
+      text-align: center;
+
+      &--heading {
+        color: $color-primary;
+        margin-bottom: 3rem;
+      }
+
+      & p {
+        color: $color-primary;
+      }
+    }
+
+
+    ///// Right section //////
+    &__options {
+      margin-left: 3rem;
+      border: 1px solid $color-primary;
+      height: 35rem;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    &__colors{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+
+      &--colorText {
+        color: $color-primary;
+        font-size: 1.2rem;
+      }
+
+      &--colorPrev {
+        display: flex;
+
+        & span {
+          width: 2rem;
+          height: 2rem;
+          border: 1px solid $color-primary;
+          border-radius: 50px;
+          margin-left: .5rem;
+
+          &:first-Child {
+            background-color: $color-grey;
+          }
+
+          &:last-Child {
+            background-color: $color-shape;
+          }
+        }
+      }
+    }
+
+    &__dimensions {
+      display: flex;
+      margin-bottom: 2rem;
+      margin-left: 2.5rem;
+
+      & p {
+        color: $color-primary;
+        margin-bottom: .3rem;
+      }
+
+      &--text {
+        margin-right: 1rem;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+
+      &--quantity,
+      &--save {
+        padding: .4rem;
+        border: 1px solid $color-primary;
+        font-size: 1.2rem;
+        color: $color-primary;
+        margin: 1rem;
+        width: 7rem;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        & span {
+          margin: .3rem;
+        }
+      }
+    }
+
+    &__cta {
+      display: flex;
+      justify-content: space-between;
+
+      & button {
+        border: none;
+        border-radius: 2px;
+        padding: .6rem;
+        width: 10rem;
+        color: $color-primary;
+        background-color: rgba($color-primary, .3);
+        text-transform: uppercase;
+        font-size: .8rem;
+        margin-bottom: 3rem;
+
+        & i {
+          margin-left: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &__price {
+      font-size: 1.3rem;
+      background-color: rgba($color-primary, .7);
+      padding: .4rem 2rem;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 3rem;
+    }
+
+    &__shipping {
+      color: $color-primary;
+
+      & i {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .similar {
+    padding: 0 4rem;
+    margin-bottom: 6rem;
+
+    &__flex {
+      display: flex;
+    }
+
+    &__heading {
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      color: $color-primary;
+      margin-bottom: 3.5rem;
+      text-align: center;
+    }
+
+    &__wrapper {
+      flex: 2;
+      margin: 1rem;
+      z-index: 10;
+
+      &--big {
+        flex: 3;
+      }
+
+      &--relative {
+        position: relative;
+
+        & span {
+          background-color: rgba($color-primary, .7);
+          border-radius: 20px;
+          padding: .2rem 1rem;
+          position: absolute;
+          bottom: .5rem;
+          right: .5rem;
+        }
+      }
+    }
+
+
+    &__img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  .testimonial {
+    padding: 3rem 12rem 10rem 12rem;
+    position: relative;
+    text-align: center;
+
+    &__outline {
+      width: 90rem;
+      height: 42rem;
+      border: 1px solid $color-primary;
+      position: absolute;
+      left: 50%;
+      top: -25%;
+      transform: translateX(-50%);
+    }
+
+    &__author {
+      text-align: right;
+      color: $color-primary;
+
+      &--name {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+      }
+    }
+
+    &__comment {
+      font-size: 1.1rem;
+      color: $color-primary;
+      padding-right: 10rem;
+      text-align: left;
+    }
+
+    &__btn {
+      width: 12rem;
+      text-transform: uppercase;
+      font-size: .8rem;
+      background-color: rgba($color-primary, .5);
+      border: none;
+      border-radius: 2px;
+      padding: 1rem 0;
+      margin-bottom: 3rem;
+      color: $color-text;
+      margin-top: 6rem;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 $(document).ready( () => {
 
+
+  // FIRST SLIDER IN *LIVING ROOM* //
   $('.slick').slick({
     autoplay: true,
     infinite: true,
@@ -8,6 +10,7 @@ $(document).ready( () => {
     nextArrow: $('.arrow-next')
   });
 
+  // SECOND SLIDER IN *LIVING ROOM* //
   $('.slick2').slick({
     centerMode: true,
     slidesToShow: 5,
@@ -18,6 +21,12 @@ $(document).ready( () => {
     nextArrow: $('.arrow-next2')
   });
 
+  // SLIDE PREVIEW IN *ADDA SOFA* //
+  $('.slide-preview').slick({
+    arrows: false,
+    fade: true,
+    dots: true
+  });
 
 
 

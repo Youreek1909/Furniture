@@ -87,10 +87,40 @@
     &--form {
       text-align: right;
       margin-bottom: 2rem;
+
+      & label {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+        color: $color-primary;
+      }
+
+      & select {
+        border: 1px solid $color-primary;
+        background-color: transparent;
+        font-size: .8rem;
+        padding: .1rem .3rem;
+        color: $color-primary;
+
+        &:focus {
+          outline: none;
+        }
+
+        & option {
+          background-color: $color-primary;
+        }
+      }
     }
 
     .examples__preview {
       text-align: center;
+
+      & a {
+        color: $color-text;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
 
       &--img {
         width: 100%;

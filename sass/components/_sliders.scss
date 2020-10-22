@@ -216,3 +216,58 @@
     }
   }
 }
+
+////// ADDA SOFA SLIDER
+
+.sofaPreview__slider {
+  margin-bottom: 3rem;
+
+  .slide-preview {
+    box-shadow: $box-shadow;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &__img {
+      width: 100%;
+      height: 35rem;
+      object-fit: cover;
+      object-position: center;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & ul {
+      list-style-type: none;
+      position: absolute;
+      left: 20%;
+      bottom: -12rem;
+
+      & li {
+        font-size: 0;
+        width: 10rem;
+        height: 7rem;
+        display: inline-block;
+        margin: 1rem;
+        cursor: pointer;
+
+        & button {
+          border-style: none;
+        }
+      }
+    }
+  }
+
+  .slide-dots {
+    text-align: center;
+
+
+    &__img {
+      max-width: 10rem;
+      height: 7rem;
+      margin: 1rem;
+      box-shadow: $box-shadow;
+    }
+  }
+}

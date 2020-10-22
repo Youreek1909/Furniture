@@ -32,6 +32,9 @@ body {
   padding: 0;
   padding-left: 6rem; }
 
+.mg-bottom-3rem {
+  margin-bottom: 3rem; }
+
 .livingRoom .section1__slide .slick {
   height: 35rem;
   padding-left: 5rem;
@@ -162,6 +165,41 @@ body {
           outline: none; }
     .livingRoom .section3 ul .slick-active {
       background-color: #F7F7F7; }
+
+.sofaPreview__slider {
+  margin-bottom: 3rem; }
+  .sofaPreview__slider .slide-preview {
+    box-shadow: 3px 3px 5px 0px rgba(115, 48, 102, 0.4);
+    margin-bottom: 2rem;
+    position: relative; }
+    .sofaPreview__slider .slide-preview__img {
+      width: 100%;
+      height: 35rem;
+      object-fit: cover;
+      object-position: center; }
+      .sofaPreview__slider .slide-preview__img:focus {
+        outline: none; }
+    .sofaPreview__slider .slide-preview ul {
+      list-style-type: none;
+      position: absolute;
+      left: 20%;
+      bottom: -12rem; }
+      .sofaPreview__slider .slide-preview ul li {
+        font-size: 0;
+        width: 10rem;
+        height: 7rem;
+        display: inline-block;
+        margin: 1rem;
+        cursor: pointer; }
+        .sofaPreview__slider .slide-preview ul li button {
+          border-style: none; }
+  .sofaPreview__slider .slide-dots {
+    text-align: center; }
+    .sofaPreview__slider .slide-dots__img {
+      max-width: 10rem;
+      height: 7rem;
+      margin: 1rem;
+      box-shadow: 3px 3px 5px 0px rgba(115, 48, 102, 0.4); }
 
 .pagination {
   padding: 3rem 5rem; }
@@ -338,7 +376,7 @@ body {
       text-transform: uppercase;
       font-size: .8rem;
       color: #733066;
-      background-color: #B9A8AA;
+      background-color: rgba(115, 48, 102, 0.5);
       border: none;
       border-radius: 2px;
       padding: 1rem 0;
@@ -501,8 +539,26 @@ body {
   .categories__examples--form {
     text-align: right;
     margin-bottom: 2rem; }
+    .categories__examples--form label {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      color: #733066; }
+    .categories__examples--form select {
+      border: 1px solid #733066;
+      background-color: transparent;
+      font-size: .8rem;
+      padding: .1rem .3rem;
+      color: #733066; }
+      .categories__examples--form select:focus {
+        outline: none; }
+      .categories__examples--form select option {
+        background-color: #733066; }
   .categories__examples .examples__preview {
     text-align: center; }
+    .categories__examples .examples__preview a {
+      color: #F7F7F7; }
+      .categories__examples .examples__preview a:hover {
+        text-decoration: none; }
     .categories__examples .examples__preview--img {
       width: 100%;
       height: 17rem;
@@ -564,3 +620,164 @@ body {
   .cit p {
     font-family: Merienda, sans-serif;
     font-size: 1.5rem; }
+
+.addaSofa .sofaPreview {
+  padding: 6rem 10rem;
+  margin-bottom: 6rem; }
+  .addaSofa .sofaPreview__heading {
+    margin-left: 16rem;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: #733066;
+    margin-bottom: 3.5rem; }
+  .addaSofa .sofaPreview__description {
+    text-align: center; }
+    .addaSofa .sofaPreview__description--heading {
+      color: #733066;
+      margin-bottom: 3rem; }
+    .addaSofa .sofaPreview__description p {
+      color: #733066; }
+  .addaSofa .sofaPreview__options {
+    margin-left: 3rem;
+    border: 1px solid #733066;
+    height: 35rem;
+    padding: 2rem 1.5rem;
+    text-align: center; }
+  .addaSofa .sofaPreview__colors {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem; }
+    .addaSofa .sofaPreview__colors--colorText {
+      color: #733066;
+      font-size: 1.2rem; }
+    .addaSofa .sofaPreview__colors--colorPrev {
+      display: flex; }
+      .addaSofa .sofaPreview__colors--colorPrev span {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid #733066;
+        border-radius: 50px;
+        margin-left: .5rem; }
+        .addaSofa .sofaPreview__colors--colorPrev span:first-Child {
+          background-color: #A8A6A3; }
+        .addaSofa .sofaPreview__colors--colorPrev span:last-Child {
+          background-color: #F09D0A; }
+  .addaSofa .sofaPreview__dimensions {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 2.5rem; }
+    .addaSofa .sofaPreview__dimensions p {
+      color: #733066;
+      margin-bottom: .3rem; }
+    .addaSofa .sofaPreview__dimensions--text {
+      margin-right: 1rem; }
+  .addaSofa .sofaPreview__buttons {
+    display: flex;
+    justify-content: center; }
+    .addaSofa .sofaPreview__buttons--quantity, .addaSofa .sofaPreview__buttons--save {
+      padding: .4rem;
+      border: 1px solid #733066;
+      font-size: 1.2rem;
+      color: #733066;
+      margin: 1rem;
+      width: 7rem;
+      text-align: center;
+      margin-bottom: 3rem; }
+      .addaSofa .sofaPreview__buttons--quantity span, .addaSofa .sofaPreview__buttons--save span {
+        margin: .3rem; }
+  .addaSofa .sofaPreview__cta {
+    display: flex;
+    justify-content: space-between; }
+    .addaSofa .sofaPreview__cta button {
+      border: none;
+      border-radius: 2px;
+      padding: .6rem;
+      width: 10rem;
+      color: #733066;
+      background-color: rgba(115, 48, 102, 0.3);
+      text-transform: uppercase;
+      font-size: .8rem;
+      margin-bottom: 3rem; }
+      .addaSofa .sofaPreview__cta button i {
+        margin-left: 1rem;
+        font-size: 1.2rem; }
+  .addaSofa .sofaPreview__price {
+    font-size: 1.3rem;
+    background-color: rgba(115, 48, 102, 0.7);
+    padding: .4rem 2rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 3rem; }
+  .addaSofa .sofaPreview__shipping {
+    color: #733066; }
+    .addaSofa .sofaPreview__shipping i {
+      font-size: 2.5rem;
+      margin-right: 1rem; }
+
+.addaSofa .similar {
+  padding: 0 4rem;
+  margin-bottom: 6rem; }
+  .addaSofa .similar__flex {
+    display: flex; }
+  .addaSofa .similar__heading {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: #733066;
+    margin-bottom: 3.5rem;
+    text-align: center; }
+  .addaSofa .similar__wrapper {
+    flex: 2;
+    margin: 1rem;
+    z-index: 10; }
+    .addaSofa .similar__wrapper--big {
+      flex: 3; }
+    .addaSofa .similar__wrapper--relative {
+      position: relative; }
+      .addaSofa .similar__wrapper--relative span {
+        background-color: rgba(115, 48, 102, 0.7);
+        border-radius: 20px;
+        padding: .2rem 1rem;
+        position: absolute;
+        bottom: .5rem;
+        right: .5rem; }
+  .addaSofa .similar__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 3px 3px 5px 0px rgba(115, 48, 102, 0.4); }
+
+.addaSofa .testimonial {
+  padding: 3rem 12rem 10rem 12rem;
+  position: relative;
+  text-align: center; }
+  .addaSofa .testimonial__outline {
+    width: 90rem;
+    height: 42rem;
+    border: 1px solid #733066;
+    position: absolute;
+    left: 50%;
+    top: -25%;
+    transform: translateX(-50%); }
+  .addaSofa .testimonial__author {
+    text-align: right;
+    color: #733066; }
+    .addaSofa .testimonial__author--name {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      margin-bottom: .5rem; }
+  .addaSofa .testimonial__comment {
+    font-size: 1.1rem;
+    color: #733066;
+    padding-right: 10rem;
+    text-align: left; }
+  .addaSofa .testimonial__btn {
+    width: 12rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    background-color: rgba(115, 48, 102, 0.5);
+    border: none;
+    border-radius: 2px;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    color: #F7F7F7;
+    margin-top: 6rem; }
