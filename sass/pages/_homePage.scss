@@ -24,12 +24,12 @@
 
   &__shadow  {
     position: absolute;
-    right: 16%;
-    top: 24%;
-    width: 37rem;
-    height: 40rem;
-    clip-path: polygon(0 0, 100% 15%, 100% 84%, 0% 100%);
-    border: 3px solid grey; // edit color
+    right: 12%;
+    top: 30%;
+    width: 39rem;
+    height: 32rem;
+    transform: perspective(37rem) rotateY(26deg);
+    border: 0.2rem solid $color-grey;
     z-index: 4;
   }
 

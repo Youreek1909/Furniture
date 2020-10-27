@@ -31,7 +31,9 @@
           <div class="header__icon">
             <i class="fas fa-search"></i>
             <i class="fas fa-shopping-bag"></i>
-            <i class="far fa-heart"></i>
+            <span class="shopping-items">0</span>
+            <i class="far fa-heart no-likes"></i>
+            <i class="fas fa-heart liked-items"></i>
           </div>
         </div>
       </div>
@@ -69,7 +71,7 @@
               </div>
             </div>
             <div class="sofaPreview__description">
-              <h4 class="sofaPreview__description--heading">Product Description:</h4>
+              <h3 class="sofaPreview__description--heading">Product Description:</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, optio. Assumenda veritatis eaque voluptatum tempore odit quas repellendus nisi cupiditate nemo deserunt. Facere officiis, praesentium nemo quaerat. Non, voluptates, hic.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat architecto ullam, aperiam! Consectetur perspiciatis eius qui culpa, corporis ab, architecto totam illo, sunt doloribus iusto eligendi. Quam reiciendis, quidem iure.</p>
             </div>
@@ -93,13 +95,14 @@
               </div>
               <div class="sofaPreview__buttons">
                 <div class="sofaPreview__buttons--quantity">
-                  <span>-</span>
-                  <span>1</span>
-                  <span>+</span>
+                  <span class="minus">-</span>
+                  <span class="num">1</span>
+                  <span class="plus">+</span>
                 </div>
                 <div class="sofaPreview__buttons--save">
                   <span>save</span>
-                  <i class="far fa-heart"></i>
+                  <i class="far fa-heart heart" style="display: inline-block"></i>
+                  <i class="fas fa-heart heart-full" style="display: none"></i>
                 </div>
               </div>
               <div class="sofaPreview__cta">
@@ -127,19 +130,19 @@
           <div class="similar__wrapper">
             <div class="similar__wrapper--relative">
               <img src="img/img-12.jpg" alt="Image" class="similar__img">
-              <span>899,00$</span>
+              <span>899.00$</span>
             </div>
           </div>
           <div class="similar__wrapper similar__wrapper--big">
             <div class="similar__wrapper--relative">
               <img src="img/img-13.jpg" alt="Image" class="similar__img">
-              <span>899,00$</span>
+              <span>899.00$</span>
             </div>
           </div>
           <div class="similar__wrapper">
             <div class="similar__wrapper--relative">
               <img src="img/img-14.jpg" alt="Image" class="similar__img">
-              <span>899,00$</span>
+              <span>899.00$</span>
             </div>
           </div>
         </div>

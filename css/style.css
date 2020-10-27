@@ -235,9 +235,22 @@ body {
       transition: color .6s ease; }
       .header__nav li a:hover {
         color: #733066; }
-  .header__icon i {
-    font-size: 2rem;
-    padding: 2rem 0 2rem 2rem; }
+  .header__icon {
+    position: relative; }
+    .header__icon i {
+      font-size: 2rem;
+      padding: 2rem 0 2rem 2rem; }
+    .header__icon .liked-items {
+      display: none;
+      color: #733066; }
+    .header__icon__animation {
+      animation: test 1s ease; }
+
+@keyframes test {
+  0% { }
+  100% {
+    top: 7rem;
+    opacity: 100%; } }
   .header__container {
     z-index: 3;
     position: absolute;
@@ -251,6 +264,17 @@ body {
     z-index: 100; }
   .header--shadow {
     box-shadow: 0px -5px 10px 5px rgba(0, 0, 0, 0.4); }
+  .header .shopping-items {
+    border-radius: 5rem;
+    background-color: #733066;
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 2.7rem;
+    right: 4rem;
+    text-align: center;
+    font-size: .8rem;
+    display: none; }
 
 .footer {
   background-color: #A8A6A3;
@@ -427,12 +451,12 @@ body {
     z-index: 2; }
   .main__shadow {
     position: absolute;
-    right: 16%;
-    top: 24%;
-    width: 37rem;
-    height: 40rem;
-    clip-path: polygon(0 0, 100% 15%, 100% 84%, 0% 100%);
-    border: 3px solid grey;
+    right: 12%;
+    top: 30%;
+    width: 39rem;
+    height: 32rem;
+    transform: perspective(37rem) rotateY(26deg);
+    border: 0.2rem solid #A8A6A3;
     z-index: 4; }
   .main__wrapper {
     position: absolute;
@@ -636,7 +660,8 @@ body {
       color: #733066;
       margin-bottom: 3rem; }
     .addaSofa .sofaPreview__description p {
-      color: #733066; }
+      color: #733066;
+      font-size: 1.2rem; }
   .addaSofa .sofaPreview__options {
     margin-left: 3rem;
     border: 1px solid #733066;
@@ -685,6 +710,14 @@ body {
       margin-bottom: 3rem; }
       .addaSofa .sofaPreview__buttons--quantity span, .addaSofa .sofaPreview__buttons--save span {
         margin: .3rem; }
+      .addaSofa .sofaPreview__buttons--quantity .plus,
+      .addaSofa .sofaPreview__buttons--quantity .minus, .addaSofa .sofaPreview__buttons--save .plus,
+      .addaSofa .sofaPreview__buttons--save .minus {
+        cursor: pointer; }
+      .addaSofa .sofaPreview__buttons--quantity .heart-full, .addaSofa .sofaPreview__buttons--save .heart-full {
+        display: none; }
+    .addaSofa .sofaPreview__buttons--save {
+      cursor: pointer; }
   .addaSofa .sofaPreview__cta {
     display: flex;
     justify-content: space-between; }
@@ -698,6 +731,8 @@ body {
       text-transform: uppercase;
       font-size: .8rem;
       margin-bottom: 3rem; }
+      .addaSofa .sofaPreview__cta button:focus {
+        outline: none; }
       .addaSofa .sofaPreview__cta button i {
         margin-left: 1rem;
         font-size: 1.2rem; }
