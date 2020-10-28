@@ -53,19 +53,17 @@ minus.addEventListener('click', () => {
 });
 
 
+const toggleClass = (el, cl) => {
+  el.classList.contains(cl) ? el.classList.remove(cl) : el.classList.add(cl);
+}
+
 saveBtn.addEventListener('click', () => {
-  if(heartFull.style.display === 'none') {
-    heartFull.style.display = 'inline-block';
-    heart.style.display = 'none';
-    likedItems.style.display = 'inline-block';
-    noLikes.style.display = 'none';
-  } else {
-    heartFull.style.display = 'none';
-    heart.style.display = 'inline-block';
-    likedItems.style.display = 'none';
-    noLikes.style.display = 'inline-block';
-  }
+  toggleClass(heartFull, 'hide');
+  toggleClass(heart, 'hide');
+  toggleClass(likedItems, 'hide');
+  toggleClass(noLikes, 'hide');
 });
+
 
 cart.addEventListener('click', () => {
   shoppingNum++;

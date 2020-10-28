@@ -35,6 +35,12 @@ body {
 .mg-bottom-3rem {
   margin-bottom: 3rem; }
 
+.hide.fa-heart {
+  display: none; }
+
+.show.fa-heart {
+  display: inline-block; }
+
 .livingRoom .section1__slide .slick {
   height: 35rem;
   padding-left: 5rem;
@@ -241,7 +247,6 @@ body {
       font-size: 2rem;
       padding: 2rem 0 2rem 2rem; }
     .header__icon .liked-items {
-      display: none;
       color: #733066; }
     .header__icon__animation {
       animation: test 1s ease; }
@@ -714,8 +719,6 @@ body {
       .addaSofa .sofaPreview__buttons--quantity .minus, .addaSofa .sofaPreview__buttons--save .plus,
       .addaSofa .sofaPreview__buttons--save .minus {
         cursor: pointer; }
-      .addaSofa .sofaPreview__buttons--quantity .heart-full, .addaSofa .sofaPreview__buttons--save .heart-full {
-        display: none; }
     .addaSofa .sofaPreview__buttons--save {
       cursor: pointer; }
   .addaSofa .sofaPreview__cta {
