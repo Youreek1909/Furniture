@@ -38,9 +38,6 @@ body {
 .hide.fa-heart {
   display: none; }
 
-.show.fa-heart {
-  display: inline-block; }
-
 .livingRoom .section1__slide .slick {
   height: 35rem;
   padding-left: 5rem;
