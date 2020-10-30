@@ -19,6 +19,38 @@
   margin-bottom: 3rem;
 }
 
-.hide.fa-heart {
+.hide.fa-heart,
+.hide.search__form {
   display: none;
+}
+
+///// search input Animation /////
+@keyframes search-form {
+  0% {
+    top: 1.5rem;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 30%;
+  }
+
+  100% {
+    opacity: 100%;
+    top: 7rem;
+  }
+}
+
+@keyframes search-input {
+  0% {
+    width: 0;
+  }
+
+  70% {
+    width: 0;
+  }
+
+  100% {
+    width: 15.5rem;
+  }
 }

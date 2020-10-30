@@ -29,7 +29,13 @@
             <li><a href="#">kitchen&dining</a></li>
           </ul>
           <div class="header__icon">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search search-icon"></i>
+            <form action="#" class="search__form hide">
+              <input type="text" placeholder="Search..." class="search__input">
+              <button class="search__btn" onclick="btnSubmit()">
+                <i class="far fa-caret-square-right search__btn--icon"></i>
+              </button>
+            </form>
             <i class="fas fa-shopping-bag"></i>
             <span class="shopping-items">0</span>
             <i class="far fa-heart no-likes"></i>

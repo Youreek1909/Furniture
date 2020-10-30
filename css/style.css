@@ -35,8 +35,27 @@ body {
 .mg-bottom-3rem {
   margin-bottom: 3rem; }
 
-.hide.fa-heart {
+.hide.fa-heart,
+.hide.search__form {
   display: none; }
+
+@keyframes search-form {
+  0% {
+    top: 1.5rem;
+    opacity: 0; }
+  50% {
+    opacity: 30%; }
+  100% {
+    opacity: 100%;
+    top: 7rem; } }
+
+@keyframes search-input {
+  0% {
+    width: 0; }
+  70% {
+    width: 0; }
+  100% {
+    width: 15.5rem; } }
 
 .livingRoom .section1__slide .slick {
   height: 35rem;
@@ -242,17 +261,42 @@ body {
     position: relative; }
     .header__icon i {
       font-size: 2rem;
-      padding: 2rem 0 2rem 2rem; }
+      padding: 2rem 0 2rem 2rem;
+      cursor: pointer; }
     .header__icon .liked-items {
       color: #733066; }
-    .header__icon__animation {
-      animation: test 1s ease; }
-
-@keyframes test {
-  0% { }
-  100% {
-    top: 7rem;
-    opacity: 100%; } }
+    .header__icon .search__form {
+      position: absolute;
+      left: 1.8rem;
+      top: 7rem; }
+    .header__icon .search__input {
+      height: 2.5rem;
+      width: 15.5rem;
+      padding: .1rem 1.3rem .1rem 1rem;
+      font-size: 1.3rem;
+      color: #A8A6A3;
+      border: 0.1rem solid #733066;
+      background-color: #E3E3E3;
+      border-radius: .2rem; }
+      .header__icon .search__input:focus {
+        outline: none; }
+      .header__icon .search__input::placeholder {
+        color: #A8A6A3; }
+    .header__icon .search__btn {
+      border: none;
+      height: 1.8rem;
+      position: absolute;
+      right: .4rem;
+      top: .3rem; }
+      .header__icon .search__btn:focus {
+        outline: none; }
+      .header__icon .search__btn--icon {
+        color: #733066;
+        padding: 0; }
+    .header__icon .animated-search-form {
+      animation: search-form 1s; }
+    .header__icon .animated-search-input {
+      animation: search-input 1s; }
   .header__container {
     z-index: 3;
     position: absolute;

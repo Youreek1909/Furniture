@@ -28,6 +28,8 @@ $(document).ready( () => {
   });
 });
 
+
+//// Variables ////
 let number = document.querySelector('.num').innerHTML;
 let num = document.querySelector('.num');
 let plus = document.querySelector('.plus');
@@ -40,6 +42,9 @@ let shoppingItems = document.querySelector('.shopping-items');
 let shoppingNum = document.querySelector('.shopping-items').innerHTML;
 const likedItems = document.querySelector('.liked-items');
 const noLikes = document.querySelector('.no-likes');
+const searchIcon = document.querySelector('.search-icon');
+const searchForm = document.querySelector('.search__form');
+const searchInput = document.querySelector('.search__input');
 
 
 plus.addEventListener('click', () => {
@@ -70,3 +75,17 @@ cart.addEventListener('click', () => {
   shoppingItems.innerHTML = shoppingNum;
   shoppingItems.style.display = 'block';
 });
+
+
+searchIcon.addEventListener('click', () => {
+  toggleClass(searchForm, 'hide');
+  toggleClass(searchForm, 'animated-search-form');
+  toggleClass(searchInput, 'animated-search-input');
+  searchInput.value = '';
+});
+
+
+////Test search button click
+const btnSubmit = () => {
+  alert(searchInput.value);
+}

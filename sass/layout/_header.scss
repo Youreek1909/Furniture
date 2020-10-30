@@ -34,91 +34,68 @@
 
   &__icon {
     position: relative;
+
     & i {
       font-size: 2rem;
       padding: 2rem 0 2rem 2rem;
+      cursor: pointer;
     }
 
     .liked-items {
       color: $color-primary;
     }
 
-    // .search {
-    //
-    //   &__form {
-    //     position: absolute;
-    //     right: 67%;
-    //     top: 0;
-    //     display: flex;
-    //     opacity: 0;
-    //     //animation: test 1s ease;
-    //   }
-    //
-    //   &__input {
-    //     border-radius: 50px;
-    //     width: 2.4rem;
-    //     height: 2.4rem;
-    //     background-color: $color-text;
-    //     border: 3px solid $color-grey;
-    //
-    //     &:focus {
-    //       outline: none;
-    //     }
-    //   }
-    //
-    //   &__btn {
-    //     padding: 0;
-    //     margin-left: -2.2rem;
-    //     margin-top: .3rem;
-    //     color: $color-grey;
-    //     cursor: pointer;
-    //   }
-    // }
-
-    &__animation {
-      animation: test 1s ease;
-    }
-
-    @keyframes test {
-      0% {
-        //top: 0;
-        //opacity: 0;
-      }
-      100% {
+    .search {
+      &__form {
+        position: absolute;
+        left: 1.8rem;
         top: 7rem;
-        opacity: 100%;
+      }
+
+      &__input {
+        height: 2.5rem;
+        width: 15.5rem;
+        padding: .1rem 1.3rem .1rem 1rem;
+        font-size: 1.3rem;
+        color: $color-grey;
+        border: .1rem solid $color-primary;
+        background-color: $color-background;
+        border-radius: .2rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: $color-grey;
+        }
+      }
+
+      &__btn {
+          border: none;
+          height: 1.8rem;
+          position: absolute;
+          right: .4rem;
+          top: .3rem;
+
+          &:focus {
+            outline: none;
+          }
+
+        &--icon {
+          color: $color-primary;
+          padding: 0;
+        }
       }
     }
 
-    // .search-form {
-    //   position: absolute;
-    //   right: 0;
-    //   top: 7rem;
-    //
-    //   & i {
-    //     position: absolute;
-    //     right: .4rem;
-    //     bottom: -1.7rem;
-    //     color: $color-grey;
-    //   }
-    // }
-    //
-    // .search-input {
-    //   width: 15rem;
-    //   border: 3px solid $color-grey;
-    //   border-radius: 20px;
-    //   font-size: 1.3rem;
-    //   color: $color-grey;
-    //   padding: .1rem 3rem .1rem 1rem;
-    //
-    //   &:focus {
-    //     outline: none;
-    //   }
-    // }
-    //
-    // .input-active {
-    //   width: 15rem;
-    // }
+    .animated-search-form {
+      animation: search-form 1s;
+    }
+
+    .animated-search-input {
+      animation: search-input 1s;
+    }
   }
 
   &__container {
