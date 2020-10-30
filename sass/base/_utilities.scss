@@ -25,6 +25,14 @@
 }
 
 ///// search input Animation /////
+.animated-search-form {
+  animation: search-form 1s;
+}
+
+.animated-search-input {
+  animation: search-input 1s;
+}
+
 @keyframes search-form {
   0% {
     top: 1.5rem;

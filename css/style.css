@@ -39,6 +39,12 @@ body {
 .hide.search__form {
   display: none; }
 
+.animated-search-form {
+  animation: search-form 1s; }
+
+.animated-search-input {
+  animation: search-input 1s; }
+
 @keyframes search-form {
   0% {
     top: 1.5rem;
@@ -293,10 +299,6 @@ body {
       .header__icon .search__btn--icon {
         color: #733066;
         padding: 0; }
-    .header__icon .animated-search-form {
-      animation: search-form 1s; }
-    .header__icon .animated-search-input {
-      animation: search-input 1s; }
   .header__container {
     z-index: 3;
     position: absolute;

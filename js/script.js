@@ -45,7 +45,7 @@ const noLikes = document.querySelector('.no-likes');
 const searchIcon = document.querySelector('.search-icon');
 const searchForm = document.querySelector('.search__form');
 const searchInput = document.querySelector('.search__input');
-
+////
 
 plus.addEventListener('click', () => {
   number++;
