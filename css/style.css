@@ -36,7 +36,8 @@ body {
   margin-bottom: 3rem; }
 
 .hide.fa-heart,
-.hide.search__form {
+.hide.search__form,
+.hide.shopping__list {
   display: none; }
 
 .animated-search-form {
@@ -319,10 +320,59 @@ body {
     height: 1.1rem;
     position: absolute;
     top: 2.7rem;
-    right: 4rem;
+    right: 3.5rem;
     text-align: center;
     font-size: .8rem;
     display: none; }
+  .header .shopping__list {
+    position: absolute;
+    top: 7rem;
+    left: -7rem;
+    background-color: #E3E3E3;
+    padding: .5rem;
+    border-radius: .2rem;
+    width: 24rem; }
+    .header .shopping__list a {
+      text-decoration: none; }
+    .header .shopping__list--items {
+      display: flex;
+      align-items: center;
+      padding: 1rem .5rem;
+      border-bottom: 0.1rem solid #733066; }
+      .header .shopping__list--items:hover {
+        background-color: rgba(168, 166, 163, 0.2); }
+    .header .shopping__list--name {
+      width: 13rem; }
+      .header .shopping__list--name p {
+        color: #733066;
+        text-transform: uppercase;
+        align-items: center;
+        margin: 0;
+        margin-right: .5rem; }
+    .header .shopping__list--picture {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 1rem; }
+      .header .shopping__list--picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%; }
+    .header .shopping__list--delete-btn {
+      border: none;
+      background-color: #E3E3E3;
+      transition: background-color .5s ease;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%; }
+      .header .shopping__list--delete-btn:hover {
+        background-color: rgba(115, 48, 102, 0.4); }
+      .header .shopping__list--delete-btn:focus {
+        outline: none; }
+    .header .shopping__list--delete i {
+      padding: 0;
+      font-size: 1.5rem; }
 
 .footer {
   background-color: #A8A6A3;
