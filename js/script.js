@@ -40,7 +40,7 @@ const heartFull = document.querySelector('.heart-full');
 const cart = document.querySelector('.sofaPreview__cta--add');
 let shoppingItems = document.querySelector('.shopping-items');
 let shoppingNum = document.querySelector('.shopping-items').innerHTML;
-const likedItems = document.querySelector('.liked-items');
+const likedItems = document.querySelector('.like-icon');
 const noLikes = document.querySelector('.no-likes');
 const searchIcon = document.querySelector('.search-icon');
 const searchForm = document.querySelector('.search__form');
@@ -48,7 +48,9 @@ const searchInput = document.querySelector('.search__input');
 const shoppingIcon = document.querySelector('.shopping-icon');
 const shoppingList = document.querySelector('.shopping__list');
 const shoppingLink = document.querySelector('.shopping__link');
-const deleteBtn = document.querySelector('.shopping__list--delete-btn');
+let sofaPrice = parseFloat(document.querySelector('.sofaPreview__price--int').innerHTML);
+let totalPrice = document.querySelector('.shopping__checkout--price');
+let finalPrice = 0;
 ////////////////////////////////////////////////////////
 
 
@@ -98,12 +100,16 @@ const cartItem = () => {
     <div class="shopping__list--items">
       <div class="shopping__list--name">
         <p>Adda parisian sofa</p>
+        <div class="shopping__list--wrapper">
+          <span class="shopping__list--price">${number + ' x'}</span>
+          <span class="shopping__list--quantity">${sofaPrice + '$'}</span>
+        </div>
       </div>
       <div class="shopping__list--picture">
         <img src="img/img-6.jpg" alt="Picture">
       </div>
       <div class="shopping__list--delete">
-        <button class="shopping__list--delete-btn">
+        <button class="shopping__list--delete-btn" onclick="deleteBtn(this)">
           <i class="fas fa-times delete-item"></i>
         </button>
       </div>
@@ -118,8 +124,15 @@ cart.addEventListener('click', () => {
   shoppingItems.innerHTML = shoppingNum;
   shoppingItems.style.display = 'block';
   cartItem();
-  console.log(deleteBtn);
+  totalCheckout();
 });
+
+///// calculate the price to Checkout
+const totalCheckout = () => {
+  let sumPrice = (number * sofaPrice);
+  finalPrice += sumPrice;
+  totalPrice.innerHTML = finalPrice.toFixed(2)  + '$';
+}
 
 
 ////open cart list only if there is some item
@@ -137,3 +150,12 @@ shoppingList.addEventListener('mouseleave', () => {
 
 
 //// delete item from the cart
+const deleteBtn = (el) => {
+  el.closest('.shopping__link').remove();
+  shoppingNum--;
+  shoppingItems.innerHTML = shoppingNum;
+  if(shoppingNum < 1) {
+    toggleClass(shoppingList, 'hide');
+    shoppingItems.style.display = 'none';
+  }
+}

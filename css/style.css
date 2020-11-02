@@ -37,7 +37,8 @@ body {
 
 .hide.fa-heart,
 .hide.search__form,
-.hide.shopping__list {
+.hide.shopping__list,
+.hide.liked__list {
   display: none; }
 
 .animated-search-form {
@@ -270,8 +271,17 @@ body {
       font-size: 2rem;
       padding: 2rem 0 2rem 2rem;
       cursor: pointer; }
-    .header__icon .liked-items {
+    .header__icon .like-icon {
       color: #733066; }
+    .header__icon .liked__list {
+      position: absolute;
+      top: 7rem;
+      left: -7rem;
+      background-color: #E3E3E3;
+      padding: .5rem;
+      border-radius: .2rem;
+      width: 24rem;
+      padding-bottom: 5rem; }
     .header__icon .search__form {
       position: absolute;
       left: 1.8rem;
@@ -331,7 +341,8 @@ body {
     background-color: #E3E3E3;
     padding: .5rem;
     border-radius: .2rem;
-    width: 24rem; }
+    width: 24rem;
+    padding-bottom: 7rem; }
     .header .shopping__list a {
       text-decoration: none; }
     .header .shopping__list--items {
@@ -349,6 +360,13 @@ body {
         align-items: center;
         margin: 0;
         margin-right: .5rem; }
+    .header .shopping__list--wrapper {
+      display: flex;
+      color: #A8A6A3;
+      text-transform: uppercase;
+      text-align: center; }
+    .header .shopping__list--price {
+      margin-right: 2rem; }
     .header .shopping__list--picture {
       width: 5rem;
       height: 5rem;
@@ -373,6 +391,22 @@ body {
     .header .shopping__list--delete i {
       padding: 0;
       font-size: 1.5rem; }
+  .header .shopping__checkout {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%); }
+    .header .shopping__checkout p {
+      color: #A8A6A3; }
+    .header .shopping__checkout button {
+      border: 0.1rem solid #733066;
+      background-color: rgba(115, 48, 102, 0.4);
+      color: #F7F7F7;
+      padding: .5rem 2rem;
+      text-transform: uppercase;
+      border-radius: .2rem; }
+      .header .shopping__checkout button:focus {
+        outline: none; }
 
 .footer {
   background-color: #A8A6A3;

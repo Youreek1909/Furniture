@@ -43,20 +43,31 @@
                 <div class="shopping__list--items">
                   <div class="shopping__list--name">
                     <p>Adda parisian sofa</p>
+                    <div class="shopping__list--wrapper">
+                      <span class="shopping__list--price">1x</span>
+                      <span class="shopping__list--quantity">899.00$</span>
+                    </div>
                   </div>
                   <div class="shopping__list--picture">
                     <img src="img/img-6.jpg" alt="Picture">
                   </div>
                   <div class="shopping__list--delete">
-                    <button class="shopping__list--delete-btn">
+                    <button class="shopping__list--delete-btn" onclick="deleteBtn(this)">
                       <i class="fas fa-times delete-item"></i>
                     </button>
                   </div>
                 </div>
               </a> -->
+              <div class="shopping__checkout">
+                <p>Total: <span class="shopping__checkout--price">800.00$</span></p>
+                <button>Checkout</button>
+              </div>
             </div>
             <i class="far fa-heart no-likes"></i>
-            <i class="fas fa-heart liked-items hide"></i>
+            <i class="fas fa-heart like-icon hide"></i>
+            <div class="liked__list hide">
+              <!-- liked list -->
+            </div>
           </div>
         </div>
       </div>
@@ -138,7 +149,10 @@
                   <i class="far fa-credit-card"></i>
                 </button>
               </div>
-              <p class="sofaPreview__price">899.00$</p>
+              <div class="sofaPreview__price">
+                <span class="sofaPreview__price--int">899.99</span>
+                <span>$</span>
+              </div>
               <div class="sofaPreview__shipping">
                 <i class="fas fa-shipping-fast"></i>
                 <span>free shipping</span>

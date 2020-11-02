@@ -41,8 +41,19 @@
       cursor: pointer;
     }
 
-    .liked-items {
+    .like-icon {
       color: $color-primary;
+    }
+
+    .liked__list {
+      position: absolute;
+      top: 7rem;
+      left: -7rem;
+      background-color: $color-background;
+      padding: .5rem;
+      border-radius: .2rem;
+      width: 24rem;
+      padding-bottom: 5rem;
     }
 
     .search {
@@ -131,6 +142,7 @@
     padding: .5rem;
     border-radius: .2rem;
     width: 24rem;
+    padding-bottom: 7rem;
 
     & a {
       text-decoration: none;
@@ -159,6 +171,17 @@
       }
     }
 
+    &--wrapper {
+      display: flex;
+      color: $color-grey;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &--price {
+      margin-right: 2rem;
+    }
+
     &--picture {
       width: 5rem;
       height: 5rem;
@@ -184,7 +207,6 @@
         border-radius: 50%;
 
         &:hover {
-          //background-color: #FA4353;
           background-color: rgba($color-primary, .4)
         }
 
@@ -196,6 +218,35 @@
       & i {
         padding: 0;
         font-size: 1.5rem;
+      }
+    }
+  }
+
+  .shopping__checkout {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & p {
+      color: $color-grey;
+    }
+
+    & button {
+      // position: absolute;
+      // bottom: 1rem;
+      // left: 50%;
+      // transform: translateX(-50%);
+
+      border: .1rem solid $color-primary;
+      background-color: rgba($color-primary, .4);
+      color: $color-text;
+      padding: .5rem 2rem;
+      text-transform: uppercase;
+      border-radius: .2rem;
+
+      &:focus {
+        outline: none;
       }
     }
   }
